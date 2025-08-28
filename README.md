@@ -5,12 +5,11 @@ A simple Bash script to extract and reconstruct the full filesystem from a Docke
 ## Usage
 
 ```bash
-# Make the script executable
+# Make script executable
 chmod +x extract-image-fs.sh
 
-# Extract image filesystem into ./image-fs
 # Example
-./extract-image-fs.sh alpine:latest ./alpine-rootfs
+bash extract-image-fs.sh alpine:latest ./alpine-rootfs
 
-# Browse the filesystem
-ls ./alpine-rootfs/bin
+# Browse filesystem locally
+ls ./alpine-rootfs/
